@@ -1,0 +1,104 @@
+.header {   
+    border-bottom: 1px solid #ECECEC;
+}
+
+.top {
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    .logo__black {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--logo-color);
+        }
+}
+
+.nav {
+    display: flex;
+    margin-left: 93px;
+    .link.current {
+        color: var(--accent-color);
+        position: relative;
+    }
+    
+    .link.current::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    }
+    .nav__item+.nav__item {
+        margin-left: 50px;
+    }
+    &__link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--second-text-color);
+    
+        transition: color var(--transition-animation);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+    &__item + &__item {
+        margin-left: 50px;
+    }
+    &__link {
+        display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+    
+        transition: color var(--transition-animation);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+    .icon {
+        margin-right: 10px;
+        fill: currentColor;
+        align-self: center;
+    }
+}

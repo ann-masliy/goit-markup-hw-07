@@ -1,0 +1,44 @@
+.about {
+    padding-top: 94px;
+}
+
+.peculiarities {
+    display: flex;
+    &__item {
+        width: 270px;
+    
+        .peculiarities &+& {
+            margin-left: 30px;
+        }
+    }
+    
+    &__title {
+        margin-bottom: 10px;
+    
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: var(--second-text-color);
+        text-transform: uppercase;
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--text-color);
+    }
+    
+    &__icon {
+        display: flex;
+        height: 120px;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: var(--thirt-background-color);
+        border-radius: 4px;
+    }
+}
